@@ -8,8 +8,7 @@ variable "bucket_prefix" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  //bucket = "${var.bucket_prefix}-bucket"
-  bucket = "${var.bucket_prefix}-bucket-check-if-cloud-run-sees-this"
+  bucket = "${var.bucket_prefix}-bucket"
 }
 
 output "bucket_name" {
